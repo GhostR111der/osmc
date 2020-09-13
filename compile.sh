@@ -40,7 +40,7 @@ rm -rf $TARGET/build
 mkdir -p $TARGET/build
 cd $TARGET/build
 cmake -DCMAKE_BUILD_TYPE=$CFG ..
-make -j2 $(nproc)
+make -j2
 
 # optional: install into your system
 $INST && sudo make install/strip
